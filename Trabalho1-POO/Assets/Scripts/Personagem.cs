@@ -2,10 +2,17 @@ using UnityEngine;
 
 public class Personagem : MonoBehaviour
 {
-    public string nome;
-    public int energia;
-    public float velocidade;
-    public float forcaAtaque;
+
+    [SerializeField]
+    private string nome;
+    [SerializeField]
+    private int energia;
+    [SerializeField]
+    private float velocidade;
+    [SerializeField]
+    private float forcaAtaque;
+    [SerializeField]
+    private float vida;
 
     public void setnome(string nome)
     {
@@ -51,6 +58,17 @@ public class Personagem : MonoBehaviour
     public float ForcaAtaque()
     {
         return this.forcaAtaque;
+    }
+    
+    
+    public void setvida(float vida)
+    {
+        this.vida = vida;
+    }
+
+    public float Vida()
+    {
+        return this.vida;
     }
     
     
