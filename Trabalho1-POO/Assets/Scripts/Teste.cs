@@ -13,6 +13,7 @@ public class Teste : MonoBehaviour
         fada.setforcaAtaque(20);
         fada.setnome("Samilly");
         fada.setvida(75);
+        fada.setHabilidadeEspecial("Pó de fada");
         Debug.Log(fada.Nome() + " tem " + fada.Energia() + " de energia, " + fada.ForcaAtaque() + " força de ataque, " + fada.Velocidade() + " de velocidade e " + fada.Vida() + " de vida.");
         
         mago.setvelocidade(20);
@@ -24,13 +25,19 @@ public class Teste : MonoBehaviour
 
         if (fada.ForcaAtaque() > mago.ForcaAtaque())
         {
-            Debug.Log(fada.Nome() + "é mais forte que " + mago.Nome());
+            Debug.Log(fada.Nome() + " é mais forte que " + mago.Nome());
         }
         
         if (mago.ForcaAtaque() > fada.ForcaAtaque())
         {
-            Debug.Log(mago.Nome() + "é mais forte que " + fada.Nome());
+            Debug.Log(mago.Nome() + " é mais forte que " + fada.Nome());
         }
+
+        if (fada.Energia() > mago.Energia())
+        {
+            Debug.Log(fada.Nome() + " derrotou " + mago.Nome() + " usando " + fada.Habilidadeespecial());
+        }
+        
     }
 
     

@@ -13,6 +13,7 @@ public class Personagem : MonoBehaviour
     private float forcaAtaque;
     [SerializeField]
     private float vida;
+    private string HabilidadeEspecial;
 
     public void setnome(string nome)
     {
@@ -69,6 +70,16 @@ public class Personagem : MonoBehaviour
     public float Vida()
     {
         return this.vida;
+    }
+    
+    public void setHabilidadeEspecial(string HabilidadeEspecial)
+    {
+        this.HabilidadeEspecial = HabilidadeEspecial;
+    }
+
+    public string Habilidadeespecial()
+    {
+        return this.HabilidadeEspecial;
     }
     
     

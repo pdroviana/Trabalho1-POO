@@ -131,8 +131,9 @@ GameObject:
   - component: {fileID: 181919447}
   - component: {fileID: 181919446}
   - component: {fileID: 181919445}
-  - component: {fileID: 181919444}
-  - component: {fileID: 181919443}
+  - component: {fileID: 181919449}
+  - component: {fileID: 181919451}
+  - component: {fileID: 181919450}
   m_Layer: 0
   m_Name: Fada
   m_TagString: Untagged
@@ -140,41 +141,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &181919443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 181919442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1ef9452c8022fb43bc852943cc7693d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nome: 
-  energia: 0
-  velocidade: 0
-  forcaAtaque: 0
-  vida: 0
-  habilidade: 0
---- !u!114 &181919444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 181919442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eca91fb103b0af47aa017df6af9418f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nome: 
-  energia: 0
-  velocidade: 0
-  forcaAtaque: 0
-  vida: 0
 --- !u!136 &181919445
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -266,6 +232,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &181919449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181919442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86467a004b02c2d4b9346e0c5537c38d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &181919450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181919442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eca91fb103b0af47aa017df6af9418f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nome: 
+  energia: 0
+  velocidade: 0
+  forcaAtaque: 0
+  vida: 0
+--- !u!114 &181919451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181919442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1ef9452c8022fb43bc852943cc7693d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nome: 
+  energia: 0
+  velocidade: 0
+  forcaAtaque: 0
+  vida: 0
+  habilidade: 0
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0

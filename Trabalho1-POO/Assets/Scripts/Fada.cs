@@ -5,7 +5,7 @@ public class Fada : Personagem
     
     public enum HabilidadesDoPersonagem
     {
-        MAGIADANATUREZA, VOO, PÓDEFADA
+        MAGIADANATUREZA, VOO
     }
 
     [SerializeField]
@@ -33,10 +33,6 @@ public class Fada : Personagem
 
             case HabilidadesDoPersonagem.MAGIADANATUREZA:
                 buff = Energia() + 30;
-                break;
-
-            case HabilidadesDoPersonagem.PÓDEFADA:
-                buff = ForcaAtaque() + 40;
                 break;
         }
 
