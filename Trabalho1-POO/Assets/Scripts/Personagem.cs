@@ -6,7 +6,7 @@ public class Personagem : MonoBehaviour
     [SerializeField]
     private string nome;
     [SerializeField]
-    private int energia;
+    private float energia;
     [SerializeField]
     private float velocidade;
     [SerializeField]
@@ -32,7 +32,7 @@ public class Personagem : MonoBehaviour
     }
 
 
-    public int Energia()
+    public float Energia()
     {
         return this.energia;
     }

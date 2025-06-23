@@ -38,6 +38,7 @@ public class Teste : MonoBehaviour
             Debug.Log(fada.Nome() + " derrotou " + mago.Nome() + " usando " + fada.Habilidadeespecial());
         }
         
+        
     }
 
     
