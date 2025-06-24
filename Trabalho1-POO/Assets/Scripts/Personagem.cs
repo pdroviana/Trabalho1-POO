@@ -6,13 +6,11 @@ public class Personagem : MonoBehaviour
     [SerializeField]
     private string nome;
     [SerializeField]
-    private float energia;
+    private int energia;
     [SerializeField]
     private float velocidade;
     [SerializeField]
-    private float forcaAtaque;
-    [SerializeField]
-    private float vida;
+    private int forcaAtaque;
     private string HabilidadeEspecial;
 
     public void setnome(string nome)
@@ -32,7 +30,7 @@ public class Personagem : MonoBehaviour
     }
 
 
-    public float Energia()
+    public int Energia()
     {
         return this.energia;
     }
@@ -50,26 +48,15 @@ public class Personagem : MonoBehaviour
     }
     
     
-    public void setforcaAtaque(float forcaAtaque)
+    public void setforcaAtaque(int forcaAtaque)
     {
         this.forcaAtaque = forcaAtaque;
     }
 
 
-    public float ForcaAtaque()
+    public int ForcaAtaque()
     {
         return this.forcaAtaque;
-    }
-    
-    
-    public void setvida(float vida)
-    {
-        this.vida = vida;
-    }
-
-    public float Vida()
-    {
-        return this.vida;
     }
     
     public void setHabilidadeEspecial(string HabilidadeEspecial)

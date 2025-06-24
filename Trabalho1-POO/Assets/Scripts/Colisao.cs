@@ -8,13 +8,13 @@ public class Colisao : MonoBehaviour
     {
         if (gameObject.CompareTag("Player"))
         {
-            float energia_atual = fada.Energia()
+            int energia_atual = fada.Energia()
                                 - colisao.gameObject.GetComponent<Ataque>().mago.ForcaAtaque();
 
 
-            fada.Energia();
+            fada.setenergia(energia_atual);
            
-        Debug.Log("Samilly " + fada.Nome()+" tem agora "+ fada.Energia() + " de energia.");
+        Debug.Log(fada.Nome()+" tem agora "+ fada.Energia() + " de energia.");
     }
 }
 

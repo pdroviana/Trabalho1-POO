@@ -3,10 +3,10 @@ using UnityEngine;
 public class Ataque : MonoBehaviour
 {
     public Personagem mago;
-    private float ataque;
+    private int ataque;
     
 
-    public float AtaqueDoInimigo()
+    public int AtaqueDoInimigo()
     {
         ataque = mago.ForcaAtaque();
         return ataque;

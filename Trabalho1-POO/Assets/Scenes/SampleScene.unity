@@ -257,11 +257,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1ef9452c8022fb43bc852943cc7693d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nome: 
-  energia: 44.1
-  velocidade: 0
-  forcaAtaque: 30.44
-  vida: 0
+  nome: Samilly
+  energia: 90
+  velocidade: 50
+  forcaAtaque: 30
   habilidade: 0
 --- !u!54 &181919452
 Rigidbody:
@@ -730,8 +729,8 @@ GameObject:
   - component: {fileID: 1677896645}
   - component: {fileID: 1677896644}
   - component: {fileID: 1677896648}
-  - component: {fileID: 1677896649}
   - component: {fileID: 1677896650}
+  - component: {fileID: 1677896651}
   m_Layer: 0
   m_Name: Mago
   m_TagString: Inimigo
@@ -857,19 +856,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1677896649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1677896643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e83a1dd32af512408a5080761db6da3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mago: {fileID: 1677896650}
 --- !u!114 &1677896650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -882,11 +868,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eca91fb103b0af47aa017df6af9418f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nome: 
-  energia: 34.33
-  velocidade: 0
-  forcaAtaque: 16.18
-  vida: 0
+  nome: Pedro
+  energia: 150
+  velocidade: 30
+  forcaAtaque: 50
+--- !u!114 &1677896651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677896643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e83a1dd32af512408a5080761db6da3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mago: {fileID: 1677896650}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
